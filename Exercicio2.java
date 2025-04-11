@@ -1,55 +1,38 @@
-import javax.swing.plaf.synth.SynthScrollPaneUI;
+import java.text.DecimalFormat;
+import java.util.Scanner;
 
 public class Exercicio2 {
 	
 	public static void main(String[] args) {
 		
-		int somaPar = 0;
-		int somaImpar = 0;
+		Scanner input = new Scanner(System.in);
+		
+        String resposta;
+       
+        	do {
+                System.out.print("Digite o nome do vendedor: ");
+                String nome = input.nextLine();
 
-        for (int i = 1; i <= 100; i++) {
-        	if (i % 2 == 0) {
-        		somaPar += i;
-        	}else {
-        		somaImpar += i;
-        	}
+                System.out.print("Digite o total de vendas (R$): ");
+                double vendas = input.nextDouble();
+                input.nextLine();
+
+                double salario = vendas * 0.17;
+
+                System.out.println("Nome: " + nome);
+                System.out.println("Total de vendas: R$ " + vendas);
+                System.out.println("Salário: R$ " + salario);
+                System.out.println();
+
+                System.out.print("Deseja digitar os dados de mais um vendedor? (sim/nao): ");
+                resposta = input.nextLine().toLowerCase();
+                System.out.println();
+
+            } while (resposta.equals("sim"));
+
+            input.close();
         }
-        System.out.println("Soma par: " + somaPar);
-        System.out.println("Soma impar: " + somaImpar);
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
-		
-	}
-		
-		
-		
-		
-		
-		
-			
-		
-		
+
+
 
