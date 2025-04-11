@@ -9,7 +9,7 @@ public class Exercicio2 {
 		
         String resposta;
        
-        	do {
+     
                 System.out.print("Digite o nome do vendedor: ");
                 String nome = input.nextLine();
 
@@ -28,7 +28,7 @@ public class Exercicio2 {
                 resposta = input.nextLine().toLowerCase();
                 System.out.println();
 
-            } while (resposta.equals("sim"));
+             while (resposta.equals("sim"));
 
             input.close();
         }

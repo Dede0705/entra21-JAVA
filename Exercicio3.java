@@ -34,12 +34,12 @@ public class Exercicio3 {
         }
 
         if (inicio != -1) {
-            System.out.print("Primeira sequência consecutiva encontrada:  ");
+            System.out.print("Sequência encontrada: ");
             for (int i = inicio; i < inicio + tamanho; i++) {
                 System.out.print(vetor[i] + " ");
             }
         } else {
-            System.out.println("Nenhuma sequência consecutiva encontrada.");
+            System.out.println("Nenhuma sequência encontrada.");
         }
 	}
 	
